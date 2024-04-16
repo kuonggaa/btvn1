@@ -1,19 +1,20 @@
-import org.junit.jupiter.api.b1;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LoopExampleTest {
 
     @Test
-    public void testSum() {
-        int expectedSum = 55; // Kết quả mong đợi khi tổng các số từ 1 đến 10
+    void testSumWithZero() {
+        assertEquals(0, LoopExample.sum(0));
+    }
 
-        // Gọi phương thức tính tổng từ 1 đến 10
-        int actualSum = 0;
-        for (int i = 1; i <= 10; i++) {
-            actualSum += i;
-        }
+    @Test
+    void testSumWithPositiveNumber() {
+        assertEquals(55, LoopExample.sum(10));
+    }
 
-        // So sánh kết quả thực tế với kết quả mong đợi
-        assertEquals(expectedSum, actualSum);
+    @Test
+    void testSumWithNegativeNumber() {
+        assertEquals(-55, LoopExample.sum(-10));
     }
 }
