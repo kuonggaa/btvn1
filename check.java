@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.b1;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LoopExampleTest {
