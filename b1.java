@@ -1,4 +1,4 @@
-cho.import java.util.Scanner;
+
 public class LoopExample {
     public static void main(String[] args) {
         int sum = 0;
